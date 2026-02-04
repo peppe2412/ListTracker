@@ -1,0 +1,66 @@
+:root {
+  --main: rgb(255, 170, 0);
+  --shadow-alerts: rgba(162, 160, 160, 0.447);
+}
+
+.box-shadow-alerts {
+  box-shadow: 1px 0px 15px var(--shadow-alerts);
+}
+
+textarea:focus{
+  border: 3px solid var(--main) !important;
+}
+
+.button-submit {
+  font-size: large;
+  padding: 7px;
+  border: none;
+  background-color: var(--main);
+  transition: all 0.1s ease;
+  box-shadow: 0 7px rgb(16, 28, 247);
+}
+
+.button-submit:active {
+  transform: translateY(7px);
+  box-shadow: none;
+}
+
+.button-remove {
+  margin-left: 7rem;
+}
+
+.spanAlert {
+  position: fixed;
+  top: 20px;
+  left: 130px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 10px;
+  animation: alertEntry 0.5s ease forwards;
+}
+
+@keyframes alertEntry {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.span-success {
+  background-color: rgb(53, 202, 53);
+}
+
+.span-danger {
+  background-color: rgb(250, 90, 90);
+}
+
+.closeIcon{
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.list {
+  margin-bottom: 40px;
+}
